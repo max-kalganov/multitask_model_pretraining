@@ -11,3 +11,17 @@ Each head has a binary output classifying input containg/not-containing
 a specific class.
 
 The experiment is tested on ImageNet dataset.
+
+
+### Iterations
+
+1. Make a single model for all classes and store metrics
+2. Make a single model with a common base, but different heads for each class
+3. Make different models with for each class with pretrained base from 1. and then from 2. 
+
+4. Use pretrained base for classifying unseen class, but the base remain frozen
+
+### Expectations
+
+Training a new class would require less layers archiving the same result
+using frozen base lsyers.
