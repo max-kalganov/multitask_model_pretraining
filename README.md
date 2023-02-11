@@ -10,8 +10,9 @@ by several heads for classifying different classes.
 Each head has a binary output classifying input containg/not-containing
 a specific class.
 
-The experiment is tested on ImageNet dataset.
-
+The experiment is tested on Mnist dataset.
+</br>*P.S. If an experiment will show good results on MNIST,
+experiment would be tested on ImageNet*
 
 ### Iterations
 
@@ -24,4 +25,4 @@ The experiment is tested on ImageNet dataset.
 ### Expectations
 
 Training a new class would require less layers archiving the same result
-using frozen base lsyers.
+using frozen base layers.
